@@ -1,0 +1,23 @@
+1.在github新建一个项目
+2.将本地仓库与远程仓库关联（http://www.jianshu.com/p/dcbb8baa6e36）
+3.git常用命令
+git init 初始化这个本地的文件夹为一个Git可以管理的仓库
+git st 查看是否有变化（状态）
+git diff 查看变化那个问价（包括第几行）
+git co .撤销所有文件
+git add .添加所有文件
+git commit -m '注释文字'
+git commit -a -m Git会自动把所有的已经跟踪过的文件暂时存起来一并提交，从而跳过add步骤
+git pull origin master 将远程更新到本地
+git push origin master 将本地代码推到远程  （第一次使用时git push -u origin master,随后就可以省略-u）
+
+
+git config --global user.email zhangyuan930319@gmail.com  输入邮箱
+git log 回顾所有提交的历史记录
+git log -3查看3条
+q 退出
+
+
+git branch 查看有多少分支
+git branch local 
+git co master 切换到master分支
