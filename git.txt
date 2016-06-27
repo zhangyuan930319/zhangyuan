@@ -19,5 +19,19 @@ q 退出
 
 
 git branch 查看有多少分支
-git branch local 
-git co master 切换到master分支
+git branch local新建local分支
+git co local 切换到local分支
+git branch -D develop 强制删除develop分支
+git co -b develop origin/develop 新建与远程有关的develop分支
+
+
+
+git merge 
+例:将master分支合并到feature分支
+git co feature
+git merge master
+或者 git merge master feature
+
+git fetch 相当于从远程获取最新版本到本地，不会自动merge
+git pull 相当于是从远程获取最新版本并merge到本地
+
